@@ -174,9 +174,9 @@
                <input type="radio" name="employee" value="yes">yes
                <input type="radio" name="employee" value="no">no
             </td>
-            <td>Monthly Income</td>
-         </tr>
-         <td><input name="per_month" id="perMonth"></td>
+            <td>Monthly Income:<br>
+               <input type="text" name="mincome" id="mincome">
+            </td>
       </table>
       <h3>Present Address</h3>
       <hr>
@@ -249,12 +249,19 @@
          <td><input type="text" name="subject" id="subject"></td>
          <td><input type="month" name="year" id="year"></td>
       </table>
-      <h3>Photo</h3>
-      <hr>
-      <table>
-         <tr>
-            <td><input type="file"></td>
-         </tr>
+      <tr>
+         <td>
+            <h3>Photo</h3>
+            <hr>
+            File: <input type="file"><br>
+            Image size should be 300x300 (Max 100KB) in JPG Format
+            <br><br>
+         </td>
+      </tr>
+      <div style=" text-align: center">
+         <input type="reset" name="submit" > 
+         <input type="submit" value="save" name="submit" >
+      </div>
       </table>
    </body>
 </html>
